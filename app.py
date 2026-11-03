@@ -26,7 +26,7 @@ if uploaded_file and api_key:
             
             chat = client.chat.completions.create(
                 messages=[{"role": "user", "content": prompt}],
-                model="llama3-8b-8192"
+                model="llama3.1-8b-instant"
             )
             st.success("Ho gaya!")
             st.write(chat.choices[0].message.content)
